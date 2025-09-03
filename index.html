@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Code - Ropa para Informáticos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+        :root {
+            --background-color: #121212;
+            --text-color: #e0e0e0;
+            --highlight-color: #00ff80;
+            --secondary-text-color: #888;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--secondary-text-color);
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(18, 18, 18, 0.9);
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--highlight-color);
+        }
+
+        main {
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        .hero-section {
+            padding: 80px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--highlight-color);
+            text-transform: uppercase;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            color: var(--secondary-text-color);
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: var(--highlight-color);
+            color: var(--background-color);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background-color: #00cc66;
+        }
+
+        .collection-section {
+            padding: 60px 20px;
+        }
+
+        .collection-section h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--highlight-color);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 255, 128, 0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin: 0 0 10px;
+            color: var(--highlight-color);
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: var(--secondary-text-color);
+            margin: 0 0 15px;
+        }
+
+        .product-card .price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .buy-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: var(--highlight-color);
+            color: var(--background-color);
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #00cc66;
+        }
+
+        footer {
+            width: 100%;
+            padding: 20px 0;
+            border-top: 1px solid var(--secondary-text-color);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--secondary-text-color);
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">TECH CODE</div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>El código se viste</h1>
+                <p>Moda y tecnología se encuentran. Ropa con un diseño minimalista y elegante, pensada para mentes programadoras.</p>
+                <a href="#coleccion" class="cta-button">Explora la Colección</a>
+            </div>
+        </section>
+
+        <section id="coleccion" class="collection-section">
+            <div class="container">
+                <h2>Nuestra Colección</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/400x400.png?text=Buzo+%7B+Code+%7D" alt="Buzo con diseño de código">
+                        <h3>Buzo '{ Code }'</h3>
+                        <p>Minimalismo y confort para tus largas sesiones de programación.</p>
+                        <p class="price">$50.00</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/400x400.png?text=Camiseta+%3Cdev%3E" alt="Camiseta con etiqueta dev">
+                        <h3>Camiseta '&lt;dev&gt;'</h3>
+                        <p>La etiqueta más icónica en la que te sentirás en casa.</p>
+                        <p class="price">$25.00</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/400x400.png?text=Gorra+&&" alt="Gorra con operador lógico AND">
+                        <h3>Gorra '&&'</h3>
+                        <p>El operador lógico que te acompaña en cada decisión. Estilo y funcionalidad.</p>
+                        <p class="price">$20.00</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/400x400.png?text=Mochila+Hex" alt="Mochila con diseño hexagonal">
+                        <h3>Mochila 'Hex'</h3>
+                        <p>Diseño inspirado en la precisión de los datos hexadecimales.</p>
+                        <p class="price">$75.00</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Code. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
