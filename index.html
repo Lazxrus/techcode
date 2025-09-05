@@ -43,6 +43,7 @@
                         <h3>Shorts '{ Source }'</h3>
                         <p>Shorts cómodos y modernos, perfectos para programar en casa o relajarte después de una jornada de código.</p>
                         <p class="price">$50.00</p>
+                        <a href="#" class="buy-button">Comprar</a>
                     </div>
                     <div class="product-card">
                         <img 
@@ -96,6 +97,30 @@
                 <img src="img/support.svg" alt="Soporte" class="icon"/>
                 <h4>020-800-456-747</h4>
                 <p>Soporte disponible 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="deal-section">
+        <div class="deal-container">
+            <div class="deal-info">
+                <span class="deal-label">OFERTA DE LA SEMANA</span>
+                <h2 class="deal-title">Buzo Oversized '{ Code }'</h2>
+                <div class="deal-prices">
+                    <span class="old-price">$70.00</span>
+                    <span class="new-price">$50.00</span>
+                </div>
+                <button class="deal-discount">$20 off</button>
+                <div class="deal-timer" id="deal-timer">
+                    <div><span id="days">00</span><small>días</small></div>
+                    <div><span id="hours">00</span><small>horas</small></div>
+                    <div><span id="minutes">00</span><small>minutos</small></div>
+                    <div><span id="seconds">00</span><small>segundos</small></div>
+                </div>
+                <a href="#" class="deal-shop">COMPRAR AHORA</a>
+            </div>
+            <div class="deal-image">
+                <img src="img/45-removebg-preview.png" alt="Buzo Oversized Oferta"/>
             </div>
         </div>
     </section>
@@ -159,5 +184,31 @@
         });
     });
     </script>
+
+    <script>
+    function startDealCountdown(days) {
+        const end = new Date();
+        end.setDate(end.getDate() + days);
+        function updateTimer() {
+            const now = new Date();
+            const diff = end - now;
+            if (diff <= 0) {
+                document.getElementById('deal-timer').innerHTML = '<span>¡Oferta terminada!</span>';
+                return;
+            }
+            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const m = Math.floor((diff / (1000 * 60)) % 60);
+            const s = Math.floor((diff / 1000) % 60);
+            document.getElementById('days').textContent = d.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = h.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = m.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = s.toString().padStart(2, '0');
+        }
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    }
+    startDealCountdown(14); // Cambia el número de días si lo deseas
+</script>
 </body>
 </html>
