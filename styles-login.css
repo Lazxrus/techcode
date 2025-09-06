@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #f6f7fb;
+    margin: 0;
+    color: #222;
+}
+
+header {
+    background: #222;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+
+.container {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    max-width: 400px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #222;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.login-form label {
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 0.3rem;
+}
+
+.login-form input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #f6f7fb;
+    transition: border 0.2s;
+}
+
+.login-form input:focus {
+    border-color: #222;
+    outline: none;
+}
+
+.cta-button {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 0;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+
+.cta-button:hover {
+    background: #444;
+}
+
+.login-links {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.98rem;
+    color: #555;
+}
+
+.login-links a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.login-links a:hover {
+    color: #0077ff;
+}
+
+.custom-footer {
+    background: #222;
+    color: #fff;
+    padding: 2rem 0 0.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-contact {
+    flex: 1 1 250px;
+    margin-bottom: 2rem;
+}
+
+.footer-contact h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+.email-input {
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    background: #f6f7fb;
+    color: #222;
+}
+
+.newsletter-form button {
+    background: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0 1.1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.newsletter-form button:hover {
+    background: #005fcc;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2.5rem;
+    flex: 2 1 400px;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.footer-links h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.4rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.98rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #0077ff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+.footer-policy a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: color 0.2s;
+}
+
+.footer-policy a:hover {
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    .footer-links {
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+}
