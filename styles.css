@@ -238,6 +238,7 @@ footer {
     flex: 1;
     font-size: 1rem;
     background: transparent;
+    color: #ffffff;
 }
 .newsletter-form button {
     background: none;
@@ -252,16 +253,6 @@ footer {
     color: #ffffff;
 }
 
-.newsletter-form input {
-    padding: 8px;
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    flex: 1;
-    font-size: 1rem;
-    background: transparent;
-    color: #ffffff; /* Add this line */
-}
-
 .footer-links {
     display: flex;
     gap: 40px;
@@ -272,7 +263,7 @@ footer {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 10px;
-}7
+}
 .footer-links ul {
     list-style: none;
     padding: 0;
