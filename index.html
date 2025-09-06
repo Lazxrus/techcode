@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Tech Code - Ropa para Informáticos. Moda y tecnología se encuentran. Ropa con un diseño minimalista y elegante, pensada para mentes programadoras.">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,37 +101,13 @@
         </div>
     </section>
 
-    <section class="deal-section">
-        <div class="deal-container">
-            <div class="deal-info">
-                <span class="deal-label">OFERTA DE LA SEMANA</span>
-                <h2 class="deal-title">Buzo Oversized '{ Code }'</h2>
-                <div class="deal-prices">
-                    <span class="old-price">$70.00</span>
-                    <span class="new-price">$50.00</span>
-                </div>
-                <button class="deal-discount">$20 off</button>
-                <div class="deal-timer" id="deal-timer">
-                    <div><span id="days">00</span><small>días</small></div>
-                    <div><span id="hours">00</span><small>horas</small></div>
-                    <div><span id="minutes">00</span><small>minutos</small></div>
-                    <div><span id="seconds">00</span><small>segundos</small></div>
-                </div>
-                <a href="#" class="deal-shop">COMPRAR AHORA</a>
-            </div>
-            <div class="deal-image">
-                <img src="img/45-removebg-preview.png" alt="Buzo Oversized Oferta"/>
-            </div>
-        </div>
-    </section>
-
     <footer class="custom-footer">
         <div class="footer-container">
             <div class="footer-contact">
                 <h5>Contacto</h5>
                 <p>¿Quieres recibir novedades y ofertas? Suscríbete a nuestro newsletter.</p>
                 <form class="newsletter-form">
-                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <input type="email" placeholder="Tu correo electrónico" class="email-input" required>
                     <button type="submit">&#9993;</button>
                 </form>
             </div>
@@ -184,31 +160,5 @@
         });
     });
     </script>
-
-    <script>
-    function startDealCountdown(days) {
-        const end = new Date();
-        end.setDate(end.getDate() + days);
-        function updateTimer() {
-            const now = new Date();
-            const diff = end - now;
-            if (diff <= 0) {
-                document.getElementById('deal-timer').innerHTML = '<span>¡Oferta terminada!</span>';
-                return;
-            }
-            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
-            const m = Math.floor((diff / (1000 * 60)) % 60);
-            const s = Math.floor((diff / 1000) % 60);
-            document.getElementById('days').textContent = d.toString().padStart(2, '0');
-            document.getElementById('hours').textContent = h.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = m.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = s.toString().padStart(2, '0');
-        }
-        updateTimer();
-        setInterval(updateTimer, 1000);
-    }
-    startDealCountdown(14); // Cambia el número de días si lo deseas
-</script>
 </body>
 </html>

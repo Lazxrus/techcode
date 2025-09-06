@@ -171,8 +171,8 @@ footer {
 }
 
 .info-section {
-    background: #f6f7f9;
-    color: #222;
+    background: #000000;
+    color: #ffffff;
     width: 100%;
     padding: 40px 0;
     margin-top: 40px;
@@ -204,12 +204,13 @@ footer {
 }
 
 .custom-footer {
-    background: #f6f7f9;
-    color: #222;
+    background: #000000;
+    color: #ffffff;
     padding: 40px 0 0 0;
     margin-top: 40px;
     font-size: 1rem;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -233,7 +234,7 @@ footer {
 .newsletter-form input {
     padding: 8px;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ffffff;
     flex: 1;
     font-size: 1rem;
     background: transparent;
@@ -243,9 +244,24 @@ footer {
     border: none;
     font-size: 1.3rem;
     cursor: pointer;
-    color: #222;
+    color: #ffffff;
     margin-left: 5px;
 }
+
+.newsletter-form input::placeholder {
+    color: #ffffff;
+}
+
+.newsletter-form input {
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    flex: 1;
+    font-size: 1rem;
+    background: transparent;
+    color: #ffffff; /* Add this line */
+}
+
 .footer-links {
     display: flex;
     gap: 40px;
@@ -256,7 +272,7 @@ footer {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 10px;
-}
+}7
 .footer-links ul {
     list-style: none;
     padding: 0;
@@ -266,7 +282,7 @@ footer {
     margin-bottom: 8px;
 }
 .footer-links a {
-    color: #222;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.98rem;
 }
@@ -274,123 +290,19 @@ footer {
     text-decoration: underline;
 }
 .footer-bottom {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #ffffff;
     margin-top: 30px;
     padding: 20px 0;
     text-align: center;
     font-size: 0.95rem;
-    color: #888;
+    color: #ffffff;
 }
 .footer-policy a {
-    color: #888;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 5px;
     font-size: 0.95rem;
 }
 .footer-policy a:hover {
     text-decoration: underline;
-}
-
-/* OFERTA DESTACADA */
-.deal-section {
-    background: #f3e7e7;
-    padding: 48px 0;
-}
-.deal-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    gap: 40px;
-}
-.deal-info {
-    max-width: 500px;
-}
-.deal-label {
-    color: #d32f2f;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 1rem;
-}
-.deal-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 16px 0 8px 0;
-}
-.deal-prices {
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-}
-.old-price {
-    text-decoration: line-through;
-    color: #888;
-    margin-right: 12px;
-}
-.new-price {
-    color: #222;
-    font-weight: bold;
-}
-.deal-discount {
-    background: #d32f2f;
-    color: #fff;
-    border: none;
-    padding: 8px 18px;
-    border-radius: 6px;
-    font-size: 1rem;
-    margin-bottom: 24px;
-    cursor: default;
-}
-.deal-timer {
-    display: flex;
-    gap: 32px;
-    background: #fff;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    border-radius: 8px;
-    padding: 18px 32px;
-    margin-bottom: 24px;
-}
-.deal-timer div {
-    text-align: center;
-}
-.deal-timer span {
-    font-size: 2rem;
-    font-weight: bold;
-    display: block;
-}
-.deal-timer small {
-    color: #888;
-    font-size: 1rem;
-}
-.deal-shop {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 10px 28px;
-    border: 2px solid #222;
-    background: none;
-    color: #222;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background 0.2s, color 0.2s;
-}
-.deal-shop:hover {
-    background: #222;
-    color: #fff;
-}
-.deal-image img {
-    max-width: 340px;
-    border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-}
-@media (max-width: 900px) {
-    .deal-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-    }
-    .deal-image img {
-        max-width: 100%;
-    }
 }
